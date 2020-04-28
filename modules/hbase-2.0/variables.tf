@@ -71,9 +71,9 @@ variable "core_disk_type" {
 }
 
 variable "core_disk_size" {
-  description = "one disk size, unit: GB, default 4 disk per core node; all disk size = coreNodeSize * 4 * core_disk_size(2 * 4 * 100 =800GB)."
+  description = "core disk size, unit: GB, disk size per core node; all disk size = coreNodeSize * core_disk_size(2 * 400 =800GB)."
   type        = number
-  default     = 100
+  default     = 400
 }
 
 variable "pay_type" {
